@@ -29,10 +29,6 @@ end
     @sender.valid? == false && @status == "pending"
     @status = "rejected"
     "Transaction rejected. Please check your account balance."
-    else
-      @sender.deposit( @amount * -1 ) 
-      @receiver.deposit( @amount )
-      @status = "complete"
     end
   end
 
